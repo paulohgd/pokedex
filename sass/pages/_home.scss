@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium",sans-serif;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(154, 255, 141), #fff);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    main{
+        display: inline-block;
+        margin-top: 2%;
+        padding: 15px;
+        position: relative;
+        .pokedex-img{
+            width: 100%;
+            max-width: 360px;
+        }
+        .pokemon-img{
+            position: absolute;
+            bottom: 55%;
+            left: 50%;
+            transform: translate(-70%,30%);
+            height: 14%;
+        }
+        .pokemon-interrogação{
+            position: absolute;
+            bottom: 55%;
+            left: 50%;
+            transform: translate(-70%,30%);
+            height: 14%;
+        }
+        .pokemon-data{
+            position: absolute;
+            font-weight: 600;
+            font-size: clamp(12px,5vw,20px);
+            color: #aaa;
+            bottom: 40%;
+            left: 30%;
+
+        }.nome-pokemon{
+            color: rgb(94, 94, 94);
+            text-transform: capitalize;
+        }.buttons{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 72%;
+            top: 78%;
+            left: 10%
+        }.button{
+            font-size: clamp(8px,5vw,12px);
+            padding: 12px;
+            width: 38%;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-weight: 600;
+            color: rgb(46, 46, 46);
+            box-shadow: -2px 3px 0 #222, -4px 6px 0 rgb(0, 0, 0);
+            &:active{
+                box-shadow: inset -4px 4px 0 #222,;
+                font-size: 10px;
+            }
+        }        
+        form{
+            position: absolute;
+            width: 64%;
+            bottom: 27%;
+            right: 22%;
+            .input-search{
+                width: 100%;
+                padding: 5%;
+                border: 2px solid black;
+                border-radius: 5px;
+                font-weight: 600;
+                color: rgb(46, 46, 46);
+                font-size: clamp(10px, 2vh,25px);
+                box-shadow: -3px 4px 0 #888, -6px 8px 0 rgb(87, 87, 87);
+            }
+        }
+
+    }  
+}
+

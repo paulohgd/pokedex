@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <!---Links-->
+    <link rel="icon" href="favicon/favicon-pokebola-16x16.png">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <main>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="pokemon" class="pokemon-img">
+        <img src="images/interrogação-pokemon-img.png" class="pokemon-interrogação" alt="" style="display: none;">
+        <h1 class="pokemon-data">
+            <span class="numero-pokemon"></span> -
+            <span class="nome-pokemon"></span>
+        </h1>
+        <form>
+            <input type="search" class="input-search" placeholder="Numero ou nome do pokémon" required>
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-anterior">&lt; Anterior</button>
+            <button class="button btn-proximo">Próximo &gt;</button>
+        </div>
+
+        <img src="images/pokedex.png" alt="pokedex-img" class="pokedex-img">
+    </main>
+
+    <!---Main JS--->
+    <script src="./js/index.js"></script>
+</body>
+</html>
